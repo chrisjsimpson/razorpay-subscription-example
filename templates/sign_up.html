@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+{% block title %}{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <h2>Easy Flask Hosting</h2>
+      <p>
+        Just enter your GitHub repo url.
+      </p>
+    </div>
+    <div class="col-sm">
+      <h2>Automatic Hosting</h2>
+      <p>Your Flask app is pulled automatically from your git repo.</p>
+    </div>
+    <div class="col-sm">
+      <h2>Fair Price</h2>
+      <p>A good price, cancel anytime</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">One Simple plan</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">₹105<small class="text-muted">/ mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Easy Flask Hosting</li>
+              <li>Free subdomain</li>
+              <li>Free database endpoint</li>
+              <li>500MB of storage</li>
+            </ul>
+            <form action=""  method="POST">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+               <button type="submot" class="btn btn-lg btn-block btn-primary">Sign up</button>
+              </div>
+            </form>
+          </div>
+        </div>
+</div>
+
+
+{% endblock %}
