@@ -1,6 +1,8 @@
 # Install
 
 ```
+git clone git@github.com:chrisjsimpson/razorpay-subscription-example.git
+cd razorpay-subscription-example
 virtualenv -p python3 venv
 
 . venv/bin/activate
